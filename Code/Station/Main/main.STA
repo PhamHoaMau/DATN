@@ -1,0 +1,117 @@
+
+ROM used:   8886/98304 (9%)
+            8886/98304 (9%) including unused fragments
+
+            1.6 Average locations per line
+            5.1 Average locations per statement
+
+RAM used:   337/8192 (4%) at main() level
+            1163/8192 (14%) worst case
+
+Stack used: 62 worst case (62 in main + 0 for interrupts)
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  181    82   5  main.c
+   16     0   0  ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\main.h
+  940     0   0  ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\30F6014.h
+  423     0   0  ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+   37     0   0  ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h
+ 1351   524  30  ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+ 2229   921  53  ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\Math.h
+   70    29   2  Analog.c
+   42    32   2  DHT22.c
+  289   149   9  ADS1248.c
+----- -----
+ 5638  1737 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     16   0    2             @delay_ms1
+0     28   0    6    140  5.0  strlen
+0    196   1    8             @MULFF
+0     74   0    2             @SITOF
+0    426   2    8             @ADDFF
+0    202   1    8             @DIVFF
+0    272   2    0             @MULFF64
+0    100   1    0             @SI64TOF64
+0    264   1    8             @DIVFF64
+0    494   3    8             @ADDFF64
+0    364   2   21   1124  9.9  CEIL_FLOOR
+0    104   1    8             @FLT
+0     44   0    4             @SFTOI
+0     58   0    2             @ITOF
+0     86   0    0             @F64TOI64
+0     18   0    4     44  1.9  floor
+0     70   0    0             @F48TO64
+0     14   0    0     61  1.9  ana_init
+0    136   1   15    197  3.2  read_analog
+0     68   0    0             @F64TO48
+0    230   1   53    740  7.4  read_avg_UV
+0    168   1   23    295  5.6  read_single_UV
+0     30   0    0    108  1.7  start_signal
+0     58   0    0    258  4.5  check_response
+0     54   0    3    349  2.6  Read_Data
+0    234   1    0    453  1.9  ads1248_init
+0    234   1    0    453  1.9  ads1248_init1
+0     54   0    4    102  3.6  convert_24bits
+0    150   1    8    420  3.8  ads1248_read_adc
+0    150   1    8    420  3.8  ads1248_read_adc1
+0     52   0    0    172  1.4  ADC_reset_REG
+0    230   1   53    740  7.4  read_avg_Dust
+0    226   1   21    380  3.8  read_single_Dust
+0    230   1   53    746  7.4  read_avg_PH
+0    194   1   21    288  2.5  read_single_PH
+0    314   2    0    681  1.9  AT_Commands
+0     24   0    0             @const1542
+0     22   0    0             @const1544
+0     22   0    0             @const1545
+0     24   0    0             @const1546
+0     34   0    0             @const1547
+0     22   0    0             @const1548
+0     22   0    0             @const1549
+0    504   3  774    913  4.2  connect
+0     40   0    0             @const1554
+0     28   0    0             @const1555
+0     18   0    0             @const1556
+0     14   0    1             @SPRINTF
+0     24   0    0             @const1561
+0     18   0    0             @const1563
+0     20   0    0             @const1566
+0    696   4  261   1037  7.1  send_data
+0     78   0    0             @const1572
+0     32   0    0             @const1573
+0    148   1    0             @DIV6464B
+0    398   2    0             @PRINTF_F64_1558
+0     48   0    2     66  2.0  DB_Log
+0    562   3    0    624  5.1  MAIN
+0     40   0    0             @const1589
+0     50   0    0             @const1591
+0     52   0    0             @const1592
+0     48   0    0             @const1593
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               25
+    Statements              1737
+    Comments                1125
+    Volume (V)              19207
+    Difficulty (D)          98.7
+    Effort to implement (E) 1896191
+    Time to implement (T)   29 hours, 16 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   32
+    Maintainability (MI)    26
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-000FE   252  0  
+00100-0FFFE  8630  56650  
+10000-17FFE     0  32768  
+
+
+

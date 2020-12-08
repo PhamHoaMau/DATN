@@ -1,0 +1,263 @@
+W0      @SCRATCH
+W0L     _RETURN_
+W0 -W3  @ADDFF64.P1
+W0 -W1  @READ_ROM_MEMORY.P2
+W0 -W3  @FLT64.P3
+W0 -W2  @DIVFF48.P4
+W0      @ITOF.P5
+W0 -W1  @DIV3232B.P6
+W0 -W3  @F64TOI64.P7
+W0 -W3  @I64TOF64.P8
+W0 -W2  @MULS4848.P9
+W0 -W3  @F64TOSI64.P10
+W0 -W1  @MUL3232.P11
+W0 -W2  @DIVS4848.P12
+W0      @delay_ms1.P13
+W0      @SITOF.P14
+W0      @delay_us1.P15
+W0 -W3  @F64TO48.P16
+W0 -W2  @MULFF48.P17
+W0 -W1  @MULS3232.P18
+W0 -W1  @FLT.P19
+W0 -W3  @SI64TOF48.P20
+W0 -W3  @PRINTF_F64_1558.P21
+W0 -W1  @SFTOI.P22
+W0 -W1  @ADDFF.P23
+W0 -W2  @F48TOSI64.P24
+W0 -W2  @ADDFF48.P25
+W0 -W1  @DIVFF.P26
+W0 -W3  @SI64TOF64.P27
+W0 -W3  @I64TOF48.P28
+W0 -W3  @DIVFF64.P29
+W0 -W1  @MULFF.P30
+W0 -W2  @FLT48.P31
+W0 -W1  @SPI_XFERM_1.P32
+W0 -W3  @MULS6464.P33
+W0 -W1  @DIVS3232A.P34
+W0 -W3  @DIVS6464.P35
+W0 -W2  @F48TO64.P36
+W0L     @SPRINTF.P37
+W0 -W3  @MULFF64.P38
+W0 -W3  @DIV6464B.P39
+W1      @SCRATCH
+W1      @WRITE_PACKED_MEMORY.P1
+W1      @READ_PACKED_MEMORY.P2
+W2 -W3  @FLT.P1
+W2 -W3  @DIVS3232A.P2
+W2      @READ_PACKED_MEMORY.P3
+W2      @READ_ROM_MEMORY.P4
+W2 -W3  @DIVFF.P5
+W2      @SPI_XFERM_1.P6
+W2      @WRITE_PACKED_MEMORY.P7
+W2 -W3  @MULS3232.P8
+W2 -W3  @DIV3232B.P9
+W2 -W3  @MUL3232.P10
+W2 -W3  @ADDFF.P11
+W2 -W3  @MULFF.P12
+W3 -W5  @DIVS4848.P1
+W3      @WRITE_PACKED_MEMORY.P2
+W3 -W5  @FLT48.P3
+W3 -W5  @MULFF48.P4
+W3      @READ_PACKED_MEMORY.P5
+W3 -W5  @MULS4848.P6
+W3      @READ_ROM_MEMORY.P7
+W3 -W5  @DIVFF48.P8
+W3 -W5  @ADDFF48.P9
+W4 -W7  @ADDFF64.P1
+W4 -W7  @FLT64.P2
+W4 -W7  @MULFF64.P3
+W4 -W7  @DIVFF64.P4
+W4 -W7  @DIVS6464.P5
+W4 -W7  @DIV6464B.P6
+W4 -W7  @MULS6464.P7
+W9 -W10 @PRINTF_F64_1558.P1
+2DE.1   DataDir_1
+2E0.1   Data_1
+800-801 strtok.save
+802-805 _Randseed
+806-82D pas_64
+82E-855 qas_64
+856-885 pat_64
+886-8B5 qat_64
+8B6     k
+8B7     T_Byte1
+8B8     T_Byte2
+8B9     RH_Byte1
+8BA     RH_Byte2
+8BC-8BF UV
+8C0-8C3 Dust
+8C4-8C7 PH
+8C8-8CB tmp
+8CC-8CF hum
+8D0-8D1 @sprintf_string
+8D2-8D3 MAIN.dem
+8D4-8FB MAIN.@STRPARAM
+8FC-9FB connect.command_con
+8FC-8FD DB_Log.log
+8FC-9FB send_data.command
+9FC-A0F send_data.@STRPARAM
+9FC-AFB connect.command_client
+A10-A11 Read_Data.i
+A10-A37 read_avg_PH.PH_buff
+A10-A37 read_avg_UV.uv_buff
+A10-A37 read_avg_Dust.dust_buff
+A12     Read_Data.num
+A38-A3B read_avg_PH.temp
+A38-A3B read_avg_Dust.temp
+A38-A3B read_avg_UV.temp
+A3C-A3F read_avg_UV.avgValue
+A3C-A3F read_avg_PH.avgValue
+A3C-A3F read_avg_Dust.avgValue
+A40-A41 read_avg_UV.k
+A40-A41 read_avg_PH.k
+A40-A41 read_avg_Dust.k
+A42-A43 read_avg_Dust.i
+A42-A43 read_avg_UV.i
+A42-A43 read_avg_PH.i
+A44-A45 read_avg_Dust.j
+A44-A45 read_avg_PH.j
+A44-A45 read_avg_UV.j
+A46-A47 read_avg_PH.n
+A46-A47 read_avg_UV.n
+A46-A47 read_avg_Dust.n
+A4C-A4F read_single_PH.ADC_value
+A4C-A4D read_single_UV.ADC_value
+A4C-A4F read_single_Dust.ADC_value
+A4E-A51 read_single_UV.ADC_float_value
+A50-A53 read_single_PH.ADC_float_value
+A50-A53 read_single_Dust.ADC_float_value
+A52-A55 read_single_UV.UV_Result
+A54-A57 read_single_PH.PH_Result
+A54-A57 read_single_Dust.Dust_Result
+A56-A57 read_analog.value
+A58     ads1248_read_adc.MSB
+A58     ads1248_read_adc1.MSB1
+A58-A5B read_analog.tmp
+A59     ads1248_read_adc.MID
+A59     ads1248_read_adc1.MID1
+A5A     ads1248_read_adc1.LSB1
+A5A     ads1248_read_adc.LSB
+A5C-A5F floor.x
+A60-A63 convert_24bits.value
+A6A-A6D CEIL_FLOOR.x
+A6E     CEIL_FLOOR.n
+A6F.0   CEIL_FLOOR.s
+A70-A73 CEIL_FLOOR.y
+A74-A77 CEIL_FLOOR.res
+A78-A79 CEIL_FLOOR.l
+AFC-BFB connect.broker_command
+BFC-C03 connect.@STRPARAM
+C08-C09 strlen.s
+C0A-C0B strlen.sc
+2780-27FF Stack
+
+ROM Allocation:
+000100  @const1542.call
+000118  @const1544.call
+00012E  @const1545.call
+000144  @const1546.call
+00015C  @const1547.call
+00017E  @const1548.call
+000194  @const1549.call
+0001AA  @const1554.call
+0001D2  @const1555.call
+0001EE  @const1556.call
+000200  @const1561.call
+000218  @const1563.call
+00022A  @const1566.call
+00023E  @const1572.call
+00028C  @const1573.call
+0002AC  @const1589.call
+0002D4  @const1591.call
+000306  @const1592.call
+00033A  @const1593.call
+00036A  ana_init
+000378  @delay_ms1
+000388  DB_Log
+0003B8  AT_Commands
+0004F2  @SPRINTF
+000500  strlen
+00051C  connect
+000714  @SI64TOF64
+000778  @MULFF64
+000888  @DIVFF64
+000990  @F64TO48
+0009D4  @FLT
+000A3C  @SFTOI
+000A68  @ITOF
+000AA2  @MULFF
+000B66  @ADDFF
+000D10  CEIL_FLOOR
+000E7C  floor
+000E8E  read_analog
+000F16  @SITOF
+000F60  @DIVFF
+00102A  read_single_UV
+0010D2  read_avg_UV
+0011B8  start_signal
+0011D6  check_response
+001210  Read_Data
+001246  ADC_reset_REG
+00127A  ads1248_init
+001364  convert_24bits
+00139A  ads1248_read_adc1
+001430  @ADDFF64
+00161E  read_single_Dust
+001700  read_avg_Dust
+0017E6  ads1248_init1
+0018D0  ads1248_read_adc
+001966  read_single_PH
+001A28  read_avg_PH
+001B0E  @F48TO64
+001B54  @F64TOI64
+001BAA  @DIV6464B
+001C3E  @PRINTF_F64_1558
+001DCC  send_data
+002084  MAIN
+002084  @cinit1
+0020B8  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\Admin\Desktop\jwclab\station\iot_station\1_Demo_station\3_Code\6_Code_merged\Main\
+
+Project Files:
+    main.c                                                  [27-Oct-20 10:34  CRC=9898C625]
+    ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\main.h [29-Sep-20 09:16  CRC=D30DACEC]
+    ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\30F6014.h [18-Apr-14 16:58  CRC=6C4BC6C8]
+    ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [10-Apr-14 09:04  CRC=662B2714]
+    ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-Jan-08 13:55  CRC=2D1F019F]
+    ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h [31-Jul-07 13:24  CRC=4E4534F4]
+    ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-Jun-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\Math.h [28-Sep-12 11:35  CRC=546412C9]
+    Analog.c                                                [01-Oct-20 09:04  CRC=3DF36421]
+    DHT22.c                                                 [13-Oct-20 14:59  CRC=9734C6AC]
+    ADS1248.c                                               [01-Oct-20 09:05  CRC=B8E944E6]
+
+Source signature=E9C3B51D
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      DSPIC30F6014
+    Pointer Size:   16
+    ADC Range:      0-4095
+    Opt Level:      9
+    Short,Int,Long: SIGNED: 8,16,32
+    Float,Double:   32,64
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

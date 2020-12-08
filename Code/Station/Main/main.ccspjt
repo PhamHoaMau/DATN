@@ -1,0 +1,55 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=DSPIC30F6014
+CCSVersion=5.025
+Compiler=PCD
+[Target Data]
+FileList=main.c
+[main.c]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=3
+D1=15-10-2020
+D1_L=11
+D1_L1=[42823]Started Editing.
+D1_L2=[43123]Stopped Editing.
+D1_L3=[55496]Started Editing.
+D1_L4=[55796]Stopped Editing.
+D1_L5=[56327]Started Editing.
+D1_L6=[56810]Stopped Editing.
+D1_L7=[62142]Started Editing.
+D1_L8=[62684]Stopped Editing.
+D1_L9=[62687]Started Editing.
+D1_L10=[62800]Stopped Editing.
+TotalEdit=11
+TotalDebug=0
+D1_E=9
+D1_D=0
+D1_L11=[62800]Project Closed.
+D2=16-10-2020
+D2_L=6
+D2_L1=[31175]Project Opened.
+D2_L2=[31330]Started Editing.
+D2_L3=[31697]Stopped Editing.
+D2_E=2
+D2_D=0
+D2_L4=[31995]Project Closed.
+D2_L5=[32006]Project Opened.
+D2_L6=[35658]Project Closed.
+D3=27-10-2020
+D3_L=5
+D3_L1=[32061]Project Opened.
+D3_L2=[32099]Started Editing.
+D3_L3=[32738]Stopped Editing.
+D3_L4=[38029]Started Editing.
+D3_L5=[38344]Stopped Editing.
+
+[Opened Files]
+1=main.c
+2=
+[Units]
+Count=1
+1=main (main)
